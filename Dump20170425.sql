@@ -80,3 +80,7 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2017-04-25 17:58:01
+
+ALTER TABLE `tracking`.`packet` 
+ADD COLUMN `lat` VARCHAR(45) NOT NULL AFTER `n_address`,
+ADD COLUMN `long` VARCHAR(45) NOT NULL AFTER `lat`;
